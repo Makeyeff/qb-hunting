@@ -1,9 +1,9 @@
 # Hunting qb-core
 
 ## add items to [qb]\qb-core\shared\items.lua like:
-
+```
 animal_meat                = { name = 'animal_meat', label = 'Meat', weight = 100, type = 'item', image = 'animal_meat.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Some kind of raw meat' },
-
+```
 ## add img to [qb]\qb-inventory\html\images
 copy png from img folder
 
@@ -27,8 +27,9 @@ copy png from img folder
     },
 ```
 ## add weapons allowed for cutting animals
+```
 Config.WhiteListWeapon = {"WEAPON_Knife", 'your weapon',} 
-
+```
 ## I take all the items from: 
  https://github.com/bitc0de/fivem-items-gallery
  but you can use your own pictures, the main thing is according to the Fivem rules
