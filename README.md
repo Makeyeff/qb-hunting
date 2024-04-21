@@ -1,12 +1,14 @@
-add items to [qb]\qb-core\shared\items.lua
-like:
+# Hunting qb-core
+
+## add items to [qb]\qb-core\shared\items.lua like:
+
 animal_meat                = { name = 'animal_meat', label = 'Meat', weight = 100, type = 'item', image = 'animal_meat.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Some kind of raw meat' },
 
-add img to [qb]\qb-inventory\html\images
+## add img to [qb]\qb-inventory\html\images
+copy png from img folder
 
-in the config you can edit how much meat and skins will be added
-and add other animals
-
+## in the config you can edit how much meat and skins will be added, and add other animals
+```
 [1] = {
         id = {
             [1] = 'A_C_Cow' -- animal model
@@ -23,9 +25,10 @@ and add other animals
             max = 5 -- the max amount obtained from butchering an animal
         }
     },
+```
+## add weapons allowed for cutting animals
+Config.WhiteListWeapon = {"WEAPON_Knife", 'your weapon',} 
 
-Config.WhiteListWeapon = {"WEAPON_Knife"} add weapons allowed for cutting animals
-
-I take all the items from: 
+## I take all the items from: 
  https://github.com/bitc0de/fivem-items-gallery
  but you can use your own pictures, the main thing is according to the Fivem rules
